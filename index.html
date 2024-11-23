@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>A trip for purpose</title>
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <div class="nav_bar">
+                <div class="logo">
+                    <a href=""><img src="images/logo.svg" alt="Logo"></a>
+                </div>
+                <div class="nav_menu_btn" id="menu_btn">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+            <ul class="nav_links" id="nav_links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#safaris">Safaris</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            <button class="btn nav_btn">Book Now</button>
+        </nav>
+        <div class="section_container header_container" id="home">
+            <p>Intuitive - Distinctive - Supportive</p>
+            <h1>Embark on the Extraordinary. <br> Your <span>Safari</span> Awaits!</h1>
+        </div>
+    </header>
+
+    <section class="section_container booking_container">
+        <form action="/" class="booking_form">
+
+            <div class="input_group">
+                <span><i class="ri-map-pin-fill"></i></span>
+                <div>
+                    <label for="destination">Destination</label>
+                    <select id="destination" name="destination">
+                        <option value="" disabled selected>Select a destination</option>
+                        <option value="volcanoes">Volcanoes National Park</option>
+                        <option value="nyungwe">Nyungwe Forest</option>
+                        <option value="akagera">Akagera National Park</option>
+                        <option value="lake-kivu">Lake Kivu</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="input_group">
+                <span><i class="ri-calendar-2-fill"></i></span>
+                <div>
+                    <label for="check-in">Check-In</label>
+                    <input type="date" placeholder="Check In" />
+                </div>
+            </div>
+
+            <div class="input_group">
+                <span><i class="ri-calendar-2-fill"></i></span>
+                <div>
+                    <label for="check-out">Check-Out</label>
+                    <input type="date" placeholder="Check Out" />
+                </div>
+            </div>
+
+            <div class="input_group">
+                <span><i class="ri-user-fill"></i></span>
+                <div>
+                    <label for="guest">Guests</label>
+                    <input type="number" placeholder="Guests" />
+                </div>
+            </div>
+
+            <div class="input_group input_btn">
+                <button class="btn">Inquire Now</button>
+            </div>
+        </form>
+
+    </section>
+
+    <section class="section_container about_container" id="about">
+        <div class="about_image">
+            <img src="images/hero2.png" alt="about">
+        </div>
+        <div class="about_content">
+            <p class="section_subheader">About Us</p>
+            <h2 class="section_header">Discover Africa’s Untamed Beauty.</h2>
+            <p class="section_description">
+                Discover unforgettable safari adventures through breathtaking landscapes and vibrant wildlife. Our website offers tailored packages, expert-led tours, and luxurious accommodations for thrill-seekers and families alike.
+            </p>
+            <div class="about_btn">
+                <button class="btn">Explore</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section_container safari_container" id="safaris">
+        <p class="section_subheader">Our Safaris</p>
+        <h2 class="section_header">Explore our range of safari experiences.</h2>
+        <div class="safari_grid">
+            <div class="safari_card">
+                <div class="safari_card_image">
+                    <img src="images/mountain-gorilla.jpg" alt="safari">
+                    <div class="safari_card_icons">
+                        <span><i class="ri-heart-fill"></i></span>
+                    </div>
+                </div>
+                <div class="safari_card_details">
+                    <h4>Mountain Gorilla Safari-4 Days</h4>
+                    <p>Experience the best of Rwanda with our shortest safari, featuring an unforgettable encounter with mountain gorillas in Volcanoes National Park. Guests can also opt to visit the golden monkeys or trek to Dian Fossey’s grave for added adventure.</p>
+                    <h5>Starting from <span>1000$/person</span></h5>
+                    <button class="btn">Book Now</button>
+                </div>
+            </div>
+            
+            <div class="safari_card">
+                <div class="safari_card_image">
+                    <img src="images/nyungwe.jpg" alt="safari">
+                    <div class="safari_card_icons">
+                        <span><i class="ri-heart-fill"></i></span>
+                    </div>
+                </div>
+                <div class="safari_card_details">
+                    <h4>Primates of Rwanda Safari-7 Days</h4>
+                    <p>
+                        This safari offers exclusive primate trekking experiences in Rwanda, including the mountain gorillas, chimpanzees, golden monkeys, and colobus monkeys, with the chance to spot even more species. The adventure takes you to both Volcanoes National Park in the north and Nyungwe National Park in the south.</p>
+                    <h5>Starting from <span>1000$/person</span></h5>
+                    <button class="btn">Book Now</button>
+                </div>
+            </div>
+
+            <div class="safari_card">
+                <div class="safari_card_image">
+                    <img src="images/gishwati.png" alt="safari">
+                    <div class="safari_card_icons">
+                        <span><i class="ri-heart-fill"></i></span>
+                    </div>
+                </div>
+                <div class="safari_card_details">
+                    <h4>Rwanda Discoverer-7 Days</h4>
+                    <p>This safari offers the chance to visit both gorillas and chimpanzees, as well as explore the savannah of Akagera National Park in eastern Rwanda. Here, you'll see a diverse array of animals and birds.
+                    </p>
+                    <h5>Starting from <span>1000$/person</span></h5>
+                    <button class="btn">Book Now</button>
+                </div>
+            </div>
+
+            <div class="safari_card">
+                <div class="safari_card_image">
+                    <img src="images/akagera.png" alt="safari">
+                    <div class="safari_card_icons">
+                        <span><i class="ri-heart-fill"></i></span>
+                    </div>
+                </div>
+                <div class="safari_card_details">
+                    <h4>Best of Rwanda-10 Days</h4>
+                    <p>This safari combines visits to the gorillas and chimpanzees, explores the savannah of Akagera National Park with its diverse wildlife and birdlife, and concludes with a relaxing trip to the stunning white-sand beaches of Lake Kivu in northwestern Rwanda, offering the perfect end to a "Best of Rwanda" tour.</p>
+                    <h5>Starting from <span>1000$/person</span></h5>
+                    <button class="btn">Book Now</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+        <p class="section_subheader">Gallery</p>
+
+        <div class="gallery_image">
+            <img src="images/traveler1.png" alt="gallery">
+        </div>
+
+        <div class="gallery_image">
+            <img src="images/traveler2.png" alt="gallery">
+        </div>
+
+        <div class="gallery_image">
+            <img src="images/traveler3.png" alt="gallery">
+        </div>
+
+        <div class="gallery_image">
+            <img src="images/traveler4.png" alt="gallery">
+        </div>
+
+        <div class="gallery_image">
+            <img src="images/traveler5.png" alt="gallery">
+        </div>
+
+        <div class="gallery_image">
+            <img src="images/traveler6.png" alt="gallery">
+        </div>
+    </section>
+
+    <footer class="footer" id="contact">
+        <div class="section_container footer_container">
+            <div class="footer_col">
+                <div class="logo">
+                    <a href="#home"><img src="images/logo.svg" alt="logo"></a>
+                </div>
+                <p class="section_description">
+                    Explore the wild with us!
+                </p>
+                <button class="btn">Book Now</button>
+            </div>
+
+            <div class="footer_col">
+                <h4>Quick Links</h4>
+                <ul class="footer_links">
+                    <li><a href="#">Browse Destinations</a></li>
+                    <li><a href="#">Safari Packages</a></li>
+                    <li><a href="#">Travel Tips & Guides</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_col">
+                <h4>Our Services</h4>
+                <ul class="footer_links">
+                    <li><a href="#">Guided wildlife safaris</a></li>
+                    <li><a href="#">Luxury safari lodges & camps</a></li>
+                    <li><a href="#">Budget-friendly safari tours</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_col">
+                <h4>Contact Us</h4>
+                <ul class="footer_links">
+                    <li><a href="#">info@tripforpurpose.com</a></li>
+                </ul>
+                <div class="footer_socials">
+                    <a href=""><img src="images/facebook-circle-fill.svg" alt="facebook"></a>
+                    <a href=""><img src="images/instagram-fill.svg" alt="Instagram"></a>
+                    <a href=""><img src="images/twitter-x-fill.svg" alt="Twitter"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bar">
+            copyright <span><i class="ri-copyright-fill"></i></span> 2025 Ishimwe Ricky. All rights reserved
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+</body>
+</html>
